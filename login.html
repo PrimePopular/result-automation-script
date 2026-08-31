@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head><title>Mock GOUNI Staff Access</title></head>
+<body id="pageBody" style="background-color: rgb(238,238,238); padding:40px;">
+  <div style="max-width:500px;margin:auto;background:#fff;padding:20px;border-radius:10px;">
+    <h4>Enter login information</h4>
+    <div id="loginError" style="color:red;display:none;">Invalid username or password</div>
+    <div>
+      Username.:
+      <input name="txtUsername" type="text" id="txtUsername" class="longInput">
+      Password :
+      <input name="txtpassword" type="password" id="txtpassword" class="longInput">
+      <br><br>
+      <input id="btnLogin" type="button" class="btn-blue" value="Login">
+    </div>
+  </div>
+<script>
+document.getElementById('btnLogin').addEventListener('click', function() {
+  var u = document.getElementById('txtUsername').value;
+  var p = document.getElementById('txtpassword').value;
+  setTimeout(function() {
+    if (u === 'Test.Lecturer' && p === 'testpass123') {
+      window.location.href = 'studentcoursemarks.html' + window.location.search;
+    } else {
+      document.getElementById('loginError').style.display = 'block';
+    }
+  }, 300);
+});
+</script>
+</body>
+</html>

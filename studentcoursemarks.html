@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Mock Course Mark Upload</title>
+<style>
+  body { font-family: Arial, sans-serif; background:#eee; padding:20px; }
+  #overlay-title { background:#111; color:#fff; padding:10px; }
+  table#table-display { width:100%; border-collapse:collapse; background:#fff; }
+  td, th { border:1px solid #ccc; padding:6px; text-align:center; }
+  .longInput { width:65px; }
+  .status-saved { background:green; color:white; }
+  .status-unsaved { background:red; color:white; }
+  #simulateFailToggle { margin-bottom:10px; }
+</style>
+</head>
+<body>
+<div id="overlay-title">COURSE MARK UPLOAD - ( UGRD ) [MOCK]</div>
+
+<div style="padding:15px;">
+  <label>Discipline: <select id="ddlDiscipline"><option>Computer Science</option></select></label>
+  <label>Session: <select id="ddlSession"><option>select</option><option>2025/2026 Session</option></select></label>
+  <label>Semester: <select id="ddlSemester"><option>select</option><option>Second Semester</option></select></label>
+  <label>Level: <select id="ddlLevel"><option>select</option><option>300 Level</option></select></label>
+  <label>Course: <select id="ddlCourse"><option>select</option><option value="GOU-CSC310">GOU-CSC310 - Intro to Ethical Hacking</option></select></label>
+  <br><br>
+  <button id="btnDisplay">Display</button>
+</div>
+
+<div id="simulateFailToggle">
+  <label><input type="checkbox" id="chkSimulateFailures"> Simulate random submission failures (for testing retry logic)</label>
+</div>
+
+<div id="divstudentList" style="display:none;">
+  <table id="table-display">
+    <thead>
+      <tr><th>S/N</th><th>Name</th><th>Registration No</th><th>ATT</th><th>1ST MID</th><th>2ND MID</th><th>EXAM</th><th>Status</th></tr>
+    </thead>
+    <tbody id="tbBody">
+      <!-- rows injected by JS -->
+    </tbody>
+  </table>
+</div>
+
+<script>
+const students = [
+  {sn:1, name:"TEST STUDENT ALPHA", reg:"GOU/TEST/CSC/0001"},
+  {sn:2, name:"TEST STUDENT BRAVO", reg:"GOU/TEST/CSC/0002"},
+  {sn:3, name:"TEST STUDENT CHARLIE", reg:"GOU/TEST/CSC/0003"},
+  {sn:4, name:"TEST STUDENT DELTA", reg:"GOU/TEST/CSC/0004"},
+  {sn:5, name:"TEST STUDENT ECHO", reg:"GOU/TEST/CSC/0005"},
+];
+let realRoster = null;
+
+async function loadRealRosterIfRequested() {
+  const useReal = new URLSearchParams(window.location.search).get('realRoster') === '1';
+  if (!useReal) return students;
+  const resp = await fetch('real_roster.json');
+  const data = await resp.json();
+  return data.map((s, i) => ({ sn: i + 1, name: s.name, reg: s.reg }));
+}
+
+function optionsFor(max) {
+  let html = '<option>select</option>';
+  for (let i = 0; i <= max; i++) html += `<option>${i}</option>`;
+  html += '<option>Nil</option>';
+  return html;
+}
+
+function buildRows(studentList) {
+  const tbody = document.getElementById('tbBody');
+  tbody.innerHTML = '';
+  studentList.forEach(s => {
+    const tr = document.createElement('tr');
+    tr.id = 'row-' + s.reg;
+    tr.innerHTML = `
+      <td>${s.sn}</td>
+      <td>${s.name}</td>
+      <td class="reg-cell">${s.reg}</td>
+      <td><select name="ATT" class="longInput att-input">${optionsFor(5)}</select></td>
+      <td><select name="MID1" class="longInput mid1-input">${optionsFor(10)}</select></td>
+      <td><select name="MID2" class="longInput mid2-input">${optionsFor(15)}</select></td>
+      <td><select name="EXAM" class="longInput exam-input">${optionsFor(70)}</select></td>
+      <td class="status-cell">Unsaved</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+document.getElementById('btnDisplay').addEventListener('click', async () => {
+  const list = await loadRealRosterIfRequested();
+  buildRows(list);
+  document.getElementById('divstudentList').style.display = 'block';
+  if (new URLSearchParams(window.location.search).get('simulateFailures') === '1') {
+    document.getElementById('chkSimulateFailures').checked = true;
+  }
+});
+
+// Intercept a "submit" trigger: in the real site this likely happens per-row
+// automatically or via a save action. For this mock, we expose a global
+// function the bot can call after filling a row's dropdowns, to simulate
+// the server round-trip (including occasional simulated failure).
+window.submitRow = function(reg) {
+  return new Promise((resolve) => {
+    const row = document.getElementById('row-' + reg);
+    const statusCell = row.querySelector('.status-cell');
+    const simulateFail = document.getElementById('chkSimulateFailures').checked;
+    const alwaysFail = reg === 'GOU/TEST/CSC/0002'; // deterministic: this one never saves
+    const shouldFail = alwaysFail || (simulateFail && Math.random() < 0.4);
+
+    setTimeout(() => {
+      if (shouldFail) {
+        statusCell.textContent = 'Unsaved';
+        statusCell.className = 'status-cell status-unsaved';
+        resolve({ ok: false });
+      } else {
+        statusCell.textContent = 'Saved';
+        statusCell.className = 'status-cell status-saved';
+        resolve({ ok: true });
+      }
+    }, 200 + Math.random() * 300); // simulate variable network latency
+  });
+};
+</script>
+</body>
+</html>
