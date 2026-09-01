@@ -1,0 +1,1002 @@
+[
+  {
+    "sn": 1,
+    "name": "Adamu Samuel Chidi",
+    "reg_no": "GOU/U23/CSC/901"
+  },
+  {
+    "sn": 2,
+    "name": "Nnamdi Rita Musa",
+    "reg_no": "GOU/U23/CSC/902"
+  },
+  {
+    "sn": 3,
+    "name": "Balogun Musa Rita",
+    "reg_no": "GOU/U23/CSC/903"
+  },
+  {
+    "sn": 4,
+    "name": "Suleiman Aisha Emeka",
+    "reg_no": "GOU/U23/CSC/904"
+  },
+  {
+    "sn": 5,
+    "name": "Uba David Ngozi",
+    "reg_no": "GOU/U23/CSC/905"
+  },
+  {
+    "sn": 6,
+    "name": "Nwosu Chidi Ifeoma",
+    "reg_no": "GOU/U23/CSC/906"
+  },
+  {
+    "sn": 7,
+    "name": "Nkemdirim Musa Mercy",
+    "reg_no": "GOU/U23/CSC/907"
+  },
+  {
+    "sn": 8,
+    "name": "Suleiman Chidi Ifeoma",
+    "reg_no": "GOU/U23/CSC/908"
+  },
+  {
+    "sn": 9,
+    "name": "Suleiman Ikenna Victoria",
+    "reg_no": "GOU/U23/CSC/909"
+  },
+  {
+    "sn": 10,
+    "name": "Onwuka Musa David",
+    "reg_no": "GOU/U23/CSC/910"
+  },
+  {
+    "sn": 11,
+    "name": "Okafor Grace Paul",
+    "reg_no": "GOU/U23/CSC/911"
+  },
+  {
+    "sn": 12,
+    "name": "Chukwu Faith Ikenna",
+    "reg_no": "GOU/U23/CSC/912"
+  },
+  {
+    "sn": 13,
+    "name": "Ogundele Victoria Grace",
+    "reg_no": "GOU/U23/CSC/913"
+  },
+  {
+    "sn": 14,
+    "name": "Yusuf Tunde Paul",
+    "reg_no": "GOU/U23/CSC/914"
+  },
+  {
+    "sn": 15,
+    "name": "Adamu Uche Emeka",
+    "reg_no": "GOU/U23/CSC/915"
+  },
+  {
+    "sn": 16,
+    "name": "Adamu Kelvin Amina",
+    "reg_no": "GOU/U23/CSC/916"
+  },
+  {
+    "sn": 17,
+    "name": "Anyanwu Comfort Mercy",
+    "reg_no": "GOU/U23/CSC/917"
+  },
+  {
+    "sn": 18,
+    "name": "Eze Grace Rita",
+    "reg_no": "GOU/U23/CSC/918"
+  },
+  {
+    "sn": 19,
+    "name": "Suleiman Obinna Aisha",
+    "reg_no": "GOU/U23/CSC/919"
+  },
+  {
+    "sn": 20,
+    "name": "Mohammed Precious Emeka",
+    "reg_no": "GOU/U23/CSC/920"
+  },
+  {
+    "sn": 21,
+    "name": "Ibrahim Fatima Emmanuel",
+    "reg_no": "GOU/U23/CSC/921"
+  },
+  {
+    "sn": 22,
+    "name": "Danjuma Samuel Daniel",
+    "reg_no": "GOU/U23/CSC/922"
+  },
+  {
+    "sn": 23,
+    "name": "Anyanwu Comfort David",
+    "reg_no": "GOU/U23/CSC/923"
+  },
+  {
+    "sn": 24,
+    "name": "Nwosu Ifeoma Ngozi",
+    "reg_no": "GOU/U23/CSC/924"
+  },
+  {
+    "sn": 25,
+    "name": "Obi Joy Paul",
+    "reg_no": "GOU/U23/CSC/925"
+  },
+  {
+    "sn": 26,
+    "name": "Nwosu Chioma Comfort",
+    "reg_no": "GOU/U23/CSC/926"
+  },
+  {
+    "sn": 27,
+    "name": "Adamu Musa Kelvin",
+    "reg_no": "GOU/U23/CSC/927"
+  },
+  {
+    "sn": 28,
+    "name": "Onwuka Grace Samuel",
+    "reg_no": "GOU/U23/CSC/928"
+  },
+  {
+    "sn": 29,
+    "name": "Anyanwu Emmanuel Blessing",
+    "reg_no": "GOU/U23/CSC/929"
+  },
+  {
+    "sn": 30,
+    "name": "Anyanwu Amina Ifeoma",
+    "reg_no": "GOU/U23/CSC/930"
+  },
+  {
+    "sn": 31,
+    "name": "Nnamdi Joy Ikenna",
+    "reg_no": "GOU/U23/CSC/931"
+  },
+  {
+    "sn": 32,
+    "name": "Nwosu Precious Mercy",
+    "reg_no": "GOU/U23/CSC/932"
+  },
+  {
+    "sn": 33,
+    "name": "Chukwu Samuel Fatima",
+    "reg_no": "GOU/U23/CSC/933"
+  },
+  {
+    "sn": 34,
+    "name": "Obi Rita Blessing",
+    "reg_no": "GOU/U23/CSC/934"
+  },
+  {
+    "sn": 35,
+    "name": "Mohammed Obinna Grace",
+    "reg_no": "GOU/U23/CSC/935"
+  },
+  {
+    "sn": 36,
+    "name": "Suleiman Precious Musa",
+    "reg_no": "GOU/U23/CSC/936"
+  },
+  {
+    "sn": 37,
+    "name": "Ogundele Joy Emmanuel",
+    "reg_no": "GOU/U23/CSC/937"
+  },
+  {
+    "sn": 38,
+    "name": "Eze Paul Musa",
+    "reg_no": "GOU/U23/CSC/938"
+  },
+  {
+    "sn": 39,
+    "name": "Eze Emmanuel Faith",
+    "reg_no": "GOU/U23/CSC/939"
+  },
+  {
+    "sn": 40,
+    "name": "Mohammed Uche Grace",
+    "reg_no": "GOU/U23/CSC/940"
+  },
+  {
+    "sn": 41,
+    "name": "Yusuf Emeka Precious",
+    "reg_no": "GOU/U23/CSC/941"
+  },
+  {
+    "sn": 42,
+    "name": "Ogundele David Ifeoma",
+    "reg_no": "GOU/U23/CSC/942"
+  },
+  {
+    "sn": 43,
+    "name": "Bello Samuel Kelvin",
+    "reg_no": "GOU/U23/CSC/943"
+  },
+  {
+    "sn": 44,
+    "name": "Onwuka Daniel Tunde",
+    "reg_no": "GOU/U23/CSC/944"
+  },
+  {
+    "sn": 45,
+    "name": "Balogun Grace Musa",
+    "reg_no": "GOU/U23/CSC/945"
+  },
+  {
+    "sn": 46,
+    "name": "Suleiman Rita Fatima",
+    "reg_no": "GOU/U23/CSC/946"
+  },
+  {
+    "sn": 47,
+    "name": "Okoro Grace Victoria",
+    "reg_no": "GOU/U23/CSC/947"
+  },
+  {
+    "sn": 48,
+    "name": "Okoro Daniel Kelvin",
+    "reg_no": "GOU/U23/CSC/948"
+  },
+  {
+    "sn": 49,
+    "name": "Obi Amina Tunde",
+    "reg_no": "GOU/U23/CSC/949"
+  },
+  {
+    "sn": 50,
+    "name": "Bello Chinedu Emeka",
+    "reg_no": "GOU/U23/CSC/950"
+  },
+  {
+    "sn": 51,
+    "name": "Eze Paul Comfort",
+    "reg_no": "GOU/U23/CSC/951"
+  },
+  {
+    "sn": 52,
+    "name": "Balogun Aisha Samuel",
+    "reg_no": "GOU/U23/CSC/952"
+  },
+  {
+    "sn": 53,
+    "name": "Uba Blessing Mercy",
+    "reg_no": "GOU/U23/CSC/953"
+  },
+  {
+    "sn": 54,
+    "name": "Mohammed Emeka Kelvin",
+    "reg_no": "GOU/U23/CSC/954"
+  },
+  {
+    "sn": 55,
+    "name": "Onwuka Mercy Chinedu",
+    "reg_no": "GOU/U23/CSC/955"
+  },
+  {
+    "sn": 56,
+    "name": "Suleiman Grace Comfort",
+    "reg_no": "GOU/U23/CSC/956"
+  },
+  {
+    "sn": 57,
+    "name": "Adamu Chidi Joy",
+    "reg_no": "GOU/U23/CSC/957"
+  },
+  {
+    "sn": 58,
+    "name": "Suleiman Daniel Paul",
+    "reg_no": "GOU/U23/CSC/958"
+  },
+  {
+    "sn": 59,
+    "name": "Ogundele Grace Aisha",
+    "reg_no": "GOU/U23/CSC/959"
+  },
+  {
+    "sn": 60,
+    "name": "Uba Chioma Blessing",
+    "reg_no": "GOU/U23/CSC/960"
+  },
+  {
+    "sn": 61,
+    "name": "Okafor Obinna Rita",
+    "reg_no": "GOU/U23/CSC/961"
+  },
+  {
+    "sn": 62,
+    "name": "Nnamdi Daniel Chinedu",
+    "reg_no": "GOU/U23/CSC/962"
+  },
+  {
+    "sn": 63,
+    "name": "Chukwu Paul Chinedu",
+    "reg_no": "GOU/U23/CSC/963"
+  },
+  {
+    "sn": 64,
+    "name": "Adamu Precious Comfort",
+    "reg_no": "GOU/U23/CSC/964"
+  },
+  {
+    "sn": 65,
+    "name": "Ibrahim Samuel Emmanuel",
+    "reg_no": "GOU/U23/CSC/965"
+  },
+  {
+    "sn": 66,
+    "name": "Nkemdirim Samuel Mercy",
+    "reg_no": "GOU/U23/CSC/966"
+  },
+  {
+    "sn": 67,
+    "name": "Balogun Ifeoma Amina",
+    "reg_no": "GOU/U23/CSC/967"
+  },
+  {
+    "sn": 68,
+    "name": "Chukwu Paul Fatima",
+    "reg_no": "GOU/U23/CSC/968"
+  },
+  {
+    "sn": 69,
+    "name": "Nkemdirim Paul Precious",
+    "reg_no": "GOU/U23/CSC/969"
+  },
+  {
+    "sn": 70,
+    "name": "Danjuma Chidi Uche",
+    "reg_no": "GOU/U23/CSC/970"
+  },
+  {
+    "sn": 71,
+    "name": "Okafor Peace Aisha",
+    "reg_no": "GOU/U23/CSC/971"
+  },
+  {
+    "sn": 72,
+    "name": "Anyanwu Precious Daniel",
+    "reg_no": "GOU/U23/CSC/972"
+  },
+  {
+    "sn": 73,
+    "name": "Ibrahim Emmanuel Musa",
+    "reg_no": "GOU/U23/CSC/973"
+  },
+  {
+    "sn": 74,
+    "name": "Obi Ngozi Daniel",
+    "reg_no": "GOU/U23/CSC/974"
+  },
+  {
+    "sn": 75,
+    "name": "Nwosu David Emeka",
+    "reg_no": "GOU/U23/CSC/975"
+  },
+  {
+    "sn": 76,
+    "name": "Bello Rita Emmanuel",
+    "reg_no": "GOU/U23/CSC/976"
+  },
+  {
+    "sn": 77,
+    "name": "Suleiman Emeka Paul",
+    "reg_no": "GOU/U23/CSC/977"
+  },
+  {
+    "sn": 78,
+    "name": "Balogun Tunde Joy",
+    "reg_no": "GOU/U23/CSC/978"
+  },
+  {
+    "sn": 79,
+    "name": "Suleiman Peace Blessing",
+    "reg_no": "GOU/U23/CSC/979"
+  },
+  {
+    "sn": 80,
+    "name": "Nkemdirim Grace Comfort",
+    "reg_no": "GOU/U23/CSC/980"
+  },
+  {
+    "sn": 81,
+    "name": "Uba Mercy Ifeoma",
+    "reg_no": "GOU/U23/CSC/981"
+  },
+  {
+    "sn": 82,
+    "name": "Suleiman Precious Paul",
+    "reg_no": "GOU/U23/CSC/982"
+  },
+  {
+    "sn": 83,
+    "name": "Yusuf Rita Ikenna",
+    "reg_no": "GOU/U23/CSC/983"
+  },
+  {
+    "sn": 84,
+    "name": "Mohammed Chioma Joy",
+    "reg_no": "GOU/U23/CSC/984"
+  },
+  {
+    "sn": 85,
+    "name": "Anyanwu Samuel Obinna",
+    "reg_no": "GOU/U23/CSC/985"
+  },
+  {
+    "sn": 86,
+    "name": "Nkemdirim Daniel Obinna",
+    "reg_no": "GOU/U23/CSC/986"
+  },
+  {
+    "sn": 87,
+    "name": "Obi Aisha Musa",
+    "reg_no": "GOU/U23/CSC/987"
+  },
+  {
+    "sn": 88,
+    "name": "Ogundele Emeka Chidi",
+    "reg_no": "GOU/U23/CSC/988"
+  },
+  {
+    "sn": 89,
+    "name": "Suleiman David Musa",
+    "reg_no": "GOU/U23/CSC/989"
+  },
+  {
+    "sn": 90,
+    "name": "Obi David Chidi",
+    "reg_no": "GOU/U23/CSC/990"
+  },
+  {
+    "sn": 91,
+    "name": "Eze Emeka Musa",
+    "reg_no": "GOU/U23/CSC/991"
+  },
+  {
+    "sn": 92,
+    "name": "Eze Emeka Comfort",
+    "reg_no": "GOU/U23/CSC/992"
+  },
+  {
+    "sn": 93,
+    "name": "Nwosu Uche Chinedu",
+    "reg_no": "GOU/U23/CSC/993"
+  },
+  {
+    "sn": 94,
+    "name": "Nnamdi Musa Joy",
+    "reg_no": "GOU/U23/CSC/994"
+  },
+  {
+    "sn": 95,
+    "name": "Yusuf Peace Fatima",
+    "reg_no": "GOU/U23/CSC/995"
+  },
+  {
+    "sn": 96,
+    "name": "Okoro Tunde David",
+    "reg_no": "GOU/U23/CSC/996"
+  },
+  {
+    "sn": 97,
+    "name": "Obi Peace Faith",
+    "reg_no": "GOU/U23/CSC/997"
+  },
+  {
+    "sn": 98,
+    "name": "Uba Peace Ifeoma",
+    "reg_no": "GOU/U23/CSC/998"
+  },
+  {
+    "sn": 99,
+    "name": "Adamu Aisha Joy",
+    "reg_no": "GOU/U23/CSC/999"
+  },
+  {
+    "sn": 100,
+    "name": "Anyanwu Victoria Victoria",
+    "reg_no": "GOU/U23/CSC/1000"
+  },
+  {
+    "sn": 101,
+    "name": "Onwuka Victoria Comfort",
+    "reg_no": "GOU/U23/CSC/1001"
+  },
+  {
+    "sn": 102,
+    "name": "Eze Rita Joy",
+    "reg_no": "GOU/U23/CSC/1002"
+  },
+  {
+    "sn": 103,
+    "name": "Adamu Samuel Ngozi",
+    "reg_no": "GOU/U23/CSC/1003"
+  },
+  {
+    "sn": 104,
+    "name": "Ogundele Kelvin Faith",
+    "reg_no": "GOU/U23/CSC/1004"
+  },
+  {
+    "sn": 105,
+    "name": "Adamu Comfort Musa",
+    "reg_no": "GOU/U23/CSC/1005"
+  },
+  {
+    "sn": 106,
+    "name": "Yusuf Ifeoma Fatima",
+    "reg_no": "GOU/U23/CSC/1006"
+  },
+  {
+    "sn": 107,
+    "name": "Balogun Obinna Victoria",
+    "reg_no": "GOU/U23/CSC/1007"
+  },
+  {
+    "sn": 108,
+    "name": "Nnamdi Blessing Obinna",
+    "reg_no": "GOU/U23/CSC/1008"
+  },
+  {
+    "sn": 109,
+    "name": "Nwosu Musa Obinna",
+    "reg_no": "GOU/U23/CSC/1009"
+  },
+  {
+    "sn": 110,
+    "name": "Suleiman Faith Aisha",
+    "reg_no": "GOU/U23/CSC/1010"
+  },
+  {
+    "sn": 111,
+    "name": "Suleiman Ngozi Emmanuel",
+    "reg_no": "GOU/U23/CSC/1011"
+  },
+  {
+    "sn": 112,
+    "name": "Nwosu Chidi Precious",
+    "reg_no": "GOU/U23/CSC/1012"
+  },
+  {
+    "sn": 113,
+    "name": "Obi Paul Blessing",
+    "reg_no": "GOU/U23/CSC/1013"
+  },
+  {
+    "sn": 114,
+    "name": "Bello Victoria Peace",
+    "reg_no": "GOU/U23/CSC/1014"
+  },
+  {
+    "sn": 115,
+    "name": "Mohammed Ifeoma Daniel",
+    "reg_no": "GOU/U23/CSC/1015"
+  },
+  {
+    "sn": 116,
+    "name": "Chukwu Ngozi Kelvin",
+    "reg_no": "GOU/U23/CSC/1016"
+  },
+  {
+    "sn": 117,
+    "name": "Mohammed Chidi Grace",
+    "reg_no": "GOU/U23/CSC/1017"
+  },
+  {
+    "sn": 118,
+    "name": "Onwuka Precious Chioma",
+    "reg_no": "GOU/U23/CSC/1018"
+  },
+  {
+    "sn": 119,
+    "name": "Suleiman Victoria Joy",
+    "reg_no": "GOU/U23/CSC/1019"
+  },
+  {
+    "sn": 120,
+    "name": "Bello Ikenna Tunde",
+    "reg_no": "GOU/U23/CSC/1020"
+  },
+  {
+    "sn": 121,
+    "name": "Ibrahim Ifeoma Ifeoma",
+    "reg_no": "GOU/U23/CSC/1021"
+  },
+  {
+    "sn": 122,
+    "name": "Okoro Ngozi Rita",
+    "reg_no": "GOU/U23/CSC/1022"
+  },
+  {
+    "sn": 123,
+    "name": "Eze Fatima Rita",
+    "reg_no": "GOU/U23/CSC/1023"
+  },
+  {
+    "sn": 124,
+    "name": "Eze Uche Ngozi",
+    "reg_no": "GOU/U23/CSC/1024"
+  },
+  {
+    "sn": 125,
+    "name": "Bello David Chinedu",
+    "reg_no": "GOU/U23/CSC/1025"
+  },
+  {
+    "sn": 126,
+    "name": "Nkemdirim Precious Blessing",
+    "reg_no": "GOU/U23/CSC/1026"
+  },
+  {
+    "sn": 127,
+    "name": "Nkemdirim Ngozi Emeka",
+    "reg_no": "GOU/U23/CSC/1027"
+  },
+  {
+    "sn": 128,
+    "name": "Chukwu Comfort Emeka",
+    "reg_no": "GOU/U23/CSC/1028"
+  },
+  {
+    "sn": 129,
+    "name": "Nwosu Mercy Joy",
+    "reg_no": "GOU/U23/CSC/1029"
+  },
+  {
+    "sn": 130,
+    "name": "Obi Comfort Kelvin",
+    "reg_no": "GOU/U23/CSC/1030"
+  },
+  {
+    "sn": 131,
+    "name": "Okoro Aisha Musa",
+    "reg_no": "GOU/U23/CSC/1031"
+  },
+  {
+    "sn": 132,
+    "name": "Danjuma David Ngozi",
+    "reg_no": "GOU/U23/CSC/1032"
+  },
+  {
+    "sn": 133,
+    "name": "Nwosu Mercy Victoria",
+    "reg_no": "GOU/U23/CSC/1033"
+  },
+  {
+    "sn": 134,
+    "name": "Okoro Joy David",
+    "reg_no": "GOU/U23/CSC/1034"
+  },
+  {
+    "sn": 135,
+    "name": "Ogundele Chinedu Precious",
+    "reg_no": "GOU/U23/CSC/1035"
+  },
+  {
+    "sn": 136,
+    "name": "Yusuf Grace Joy",
+    "reg_no": "GOU/U23/CSC/1036"
+  },
+  {
+    "sn": 137,
+    "name": "Ogundele Ikenna Musa",
+    "reg_no": "GOU/U23/CSC/1037"
+  },
+  {
+    "sn": 138,
+    "name": "Mohammed Grace Tunde",
+    "reg_no": "GOU/U23/CSC/1038"
+  },
+  {
+    "sn": 139,
+    "name": "Ibrahim Joy Obinna",
+    "reg_no": "GOU/U23/CSC/1039"
+  },
+  {
+    "sn": 140,
+    "name": "Nwosu Uche Chidi",
+    "reg_no": "GOU/U23/CSC/1040"
+  },
+  {
+    "sn": 141,
+    "name": "Danjuma Obinna David",
+    "reg_no": "GOU/U23/CSC/1041"
+  },
+  {
+    "sn": 142,
+    "name": "Nwosu Aisha Fatima",
+    "reg_no": "GOU/U23/CSC/1042"
+  },
+  {
+    "sn": 143,
+    "name": "Nkemdirim Ifeoma Grace",
+    "reg_no": "GOU/U23/CSC/1043"
+  },
+  {
+    "sn": 144,
+    "name": "Anyanwu Tunde Daniel",
+    "reg_no": "GOU/U23/CSC/1044"
+  },
+  {
+    "sn": 145,
+    "name": "Obi Emeka Amina",
+    "reg_no": "GOU/U23/CSC/1045"
+  },
+  {
+    "sn": 146,
+    "name": "Chukwu Chioma Obinna",
+    "reg_no": "GOU/U23/CSC/1046"
+  },
+  {
+    "sn": 147,
+    "name": "Suleiman Emmanuel Ikenna",
+    "reg_no": "GOU/U23/CSC/1047"
+  },
+  {
+    "sn": 148,
+    "name": "Danjuma Chioma Faith",
+    "reg_no": "GOU/U23/CSC/1048"
+  },
+  {
+    "sn": 149,
+    "name": "Nkemdirim Samuel Chidi",
+    "reg_no": "GOU/U23/CSC/1049"
+  },
+  {
+    "sn": 150,
+    "name": "Suleiman Joy Chioma",
+    "reg_no": "GOU/U23/CSC/1050"
+  },
+  {
+    "sn": 151,
+    "name": "Adamu Precious Daniel",
+    "reg_no": "GOU/U23/CSC/1051"
+  },
+  {
+    "sn": 152,
+    "name": "Nnamdi Tunde Aisha",
+    "reg_no": "GOU/U23/CSC/1052"
+  },
+  {
+    "sn": 153,
+    "name": "Adamu Daniel Rita",
+    "reg_no": "GOU/U23/CSC/1053"
+  },
+  {
+    "sn": 154,
+    "name": "Balogun Fatima Grace",
+    "reg_no": "GOU/U23/CSC/1054"
+  },
+  {
+    "sn": 155,
+    "name": "Danjuma Chioma Ifeoma",
+    "reg_no": "GOU/U23/CSC/1055"
+  },
+  {
+    "sn": 156,
+    "name": "Ogundele Ikenna Ifeoma",
+    "reg_no": "GOU/U23/CSC/1056"
+  },
+  {
+    "sn": 157,
+    "name": "Nnamdi Joy Chinedu",
+    "reg_no": "GOU/U23/CSC/1057"
+  },
+  {
+    "sn": 158,
+    "name": "Nnamdi Peace Daniel",
+    "reg_no": "GOU/U23/CSC/1058"
+  },
+  {
+    "sn": 159,
+    "name": "Eze Precious Emeka",
+    "reg_no": "GOU/U23/CSC/1059"
+  },
+  {
+    "sn": 160,
+    "name": "Uba Samuel Emmanuel",
+    "reg_no": "GOU/U23/CSC/1060"
+  },
+  {
+    "sn": 161,
+    "name": "Eze Grace Chidi",
+    "reg_no": "GOU/U23/CSC/1061"
+  },
+  {
+    "sn": 162,
+    "name": "Balogun Uche Samuel",
+    "reg_no": "GOU/U23/CSC/1062"
+  },
+  {
+    "sn": 163,
+    "name": "Chukwu Grace Rita",
+    "reg_no": "GOU/U23/CSC/1063"
+  },
+  {
+    "sn": 164,
+    "name": "Suleiman Obinna Ikenna",
+    "reg_no": "GOU/U23/CSC/1064"
+  },
+  {
+    "sn": 165,
+    "name": "Suleiman Victoria Chidi",
+    "reg_no": "GOU/U23/CSC/1065"
+  },
+  {
+    "sn": 166,
+    "name": "Nwosu Aisha Daniel",
+    "reg_no": "GOU/U23/CSC/1066"
+  },
+  {
+    "sn": 167,
+    "name": "Balogun Ikenna Fatima",
+    "reg_no": "GOU/U23/CSC/1067"
+  },
+  {
+    "sn": 168,
+    "name": "Anyanwu Ngozi David",
+    "reg_no": "GOU/U23/CSC/1068"
+  },
+  {
+    "sn": 169,
+    "name": "Balogun Fatima Victoria",
+    "reg_no": "GOU/U23/CSC/1069"
+  },
+  {
+    "sn": 170,
+    "name": "Eze Tunde Chioma",
+    "reg_no": "GOU/U23/CSC/1070"
+  },
+  {
+    "sn": 171,
+    "name": "Eze Amina Daniel",
+    "reg_no": "GOU/U23/CSC/1071"
+  },
+  {
+    "sn": 172,
+    "name": "Yusuf Amina Joy",
+    "reg_no": "GOU/U23/CSC/1072"
+  },
+  {
+    "sn": 173,
+    "name": "Adamu Musa Amina",
+    "reg_no": "GOU/U23/CSC/1073"
+  },
+  {
+    "sn": 174,
+    "name": "Suleiman Paul Daniel",
+    "reg_no": "GOU/U23/CSC/1074"
+  },
+  {
+    "sn": 175,
+    "name": "Uba Comfort Mercy",
+    "reg_no": "GOU/U23/CSC/1075"
+  },
+  {
+    "sn": 176,
+    "name": "Balogun Rita Precious",
+    "reg_no": "GOU/U23/CSC/1076"
+  },
+  {
+    "sn": 177,
+    "name": "Obi Precious Comfort",
+    "reg_no": "GOU/U23/CSC/1077"
+  },
+  {
+    "sn": 178,
+    "name": "Chukwu Blessing Daniel",
+    "reg_no": "GOU/U23/CSC/1078"
+  },
+  {
+    "sn": 179,
+    "name": "Okafor Victoria Blessing",
+    "reg_no": "GOU/U23/CSC/1079"
+  },
+  {
+    "sn": 180,
+    "name": "Ogundele Rita Faith",
+    "reg_no": "GOU/U23/CSC/1080"
+  },
+  {
+    "sn": 181,
+    "name": "Uba Precious Faith",
+    "reg_no": "GOU/U23/CSC/1081"
+  },
+  {
+    "sn": 182,
+    "name": "Obi Joy Grace",
+    "reg_no": "GOU/U23/CSC/1082"
+  },
+  {
+    "sn": 183,
+    "name": "Adamu Blessing Kelvin",
+    "reg_no": "GOU/U23/CSC/1083"
+  },
+  {
+    "sn": 184,
+    "name": "Eze Comfort Comfort",
+    "reg_no": "GOU/U23/CSC/1084"
+  },
+  {
+    "sn": 185,
+    "name": "Obi Peace Ifeoma",
+    "reg_no": "GOU/U23/CSC/1085"
+  },
+  {
+    "sn": 186,
+    "name": "Onwuka Emmanuel Amina",
+    "reg_no": "GOU/U23/CSC/1086"
+  },
+  {
+    "sn": 187,
+    "name": "Obi Chioma Musa",
+    "reg_no": "GOU/U23/CSC/1087"
+  },
+  {
+    "sn": 188,
+    "name": "Yusuf Chidi Kelvin",
+    "reg_no": "GOU/U23/CSC/1088"
+  },
+  {
+    "sn": 189,
+    "name": "Nnamdi Uche Comfort",
+    "reg_no": "GOU/U23/CSC/1089"
+  },
+  {
+    "sn": 190,
+    "name": "Nnamdi Emeka Amina",
+    "reg_no": "GOU/U23/CSC/1090"
+  },
+  {
+    "sn": 191,
+    "name": "Nkemdirim Samuel Kelvin",
+    "reg_no": "GOU/U23/CSC/1091"
+  },
+  {
+    "sn": 192,
+    "name": "Suleiman Joy Uche",
+    "reg_no": "GOU/U23/CSC/1092"
+  },
+  {
+    "sn": 193,
+    "name": "Adamu Chidi Daniel",
+    "reg_no": "GOU/U23/CSC/1093"
+  },
+  {
+    "sn": 194,
+    "name": "Chukwu Grace David",
+    "reg_no": "GOU/U23/CSC/1094"
+  },
+  {
+    "sn": 195,
+    "name": "Eze Grace Aisha",
+    "reg_no": "GOU/U23/CSC/1095"
+  },
+  {
+    "sn": 196,
+    "name": "Uba Mercy Amina",
+    "reg_no": "GOU/U23/CSC/1096"
+  },
+  {
+    "sn": 197,
+    "name": "Ogundele Rita Victoria",
+    "reg_no": "GOU/U23/CSC/1097"
+  },
+  {
+    "sn": 198,
+    "name": "Nkemdirim Mercy Aisha",
+    "reg_no": "GOU/U23/CSC/1098"
+  },
+  {
+    "sn": 199,
+    "name": "Okoro Kelvin Ifeoma",
+    "reg_no": "GOU/U23/CSC/1099"
+  },
+  {
+    "sn": 200,
+    "name": "Eze Grace Ikenna",
+    "reg_no": "GOU/U23/CSC/1100"
+  }
+]

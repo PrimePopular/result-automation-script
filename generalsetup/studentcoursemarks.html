@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Course Mark Upload (MOCK)</title>
+<style>
+  body { font-family: Arial, sans-serif; background:#eee; margin:0; padding:20px; }
+  #overlay-title { background:#111; color:#fff; padding:10px; }
+  table#table-display { width:100%; border-collapse:collapse; background:#fff; }
+  td, th { border:1px solid #ccc; padding:6px; text-align:center; font-size:13px; }
+  .longInput { width:65px; }
+  .status-saved { background:green; color:white; }
+  .status-unsaved { background:red; color:white; }
+  select { padding:4px; }
+  #simulateFailToggle { margin: 10px 0; }
+</style>
+</head>
+<body>
+<div id="overlay-title">COURSE MARK UPLOAD - ( UGRD ) [MOCK]</div>
+
+<div style="padding:15px;">
+  <label>Discipline:
+    <select id="ddlDiscipline">
+      <option>select</option>
+      <option>Computer Science</option>
+      <option>Mathematics</option>
+      <option>Physics</option>
+      <option>Statistics</option>
+    </select>
+  </label>
+
+  <label>Session:
+    <select id="ddlSession">
+      <option>select</option>
+      <option>2020/2021 Session</option>
+      <option>2021/2022 Session</option>
+      <option>2022/2023 Session</option>
+      <option>2023/2024 Session</option>
+      <option>2024/2025 Session</option>
+      <option>2025/2026 Session</option>
+      <option>2025/2026 Summer session</option>
+      <option>2025/2026 Extra year session</option>
+    </select>
+  </label>
+
+  <label>Semester:
+    <select id="ddlSemester">
+      <option>select</option>
+      <option>First Semester</option>
+      <option>Second Semester</option>
+    </select>
+  </label>
+
+  <label>Level:
+    <select id="ddlLevel">
+      <option>select</option>
+      <option>100 Level</option>
+      <option>200 Level</option>
+      <option>300 Level</option>
+      <option>400 Level</option>
+      <option>500 Level</option>
+    </select>
+  </label>
+
+  <label>Course:
+    <select id="ddlCourse">
+      <option>select</option>
+      <option value="GOU-CSC101">GOU-CSC101 - Intro to Computing</option>
+      <option value="GOU-CSC205">GOU-CSC205 - Data Structures</option>
+      <option value="GOU-CSC310">GOU-CSC310 - Intro to Ethical Hacking and Strategies</option>
+      <option value="GOU-CSC322">GOU-CSC322 - Operating Systems</option>
+      <option value="GOU-CSC401">GOU-CSC401 - Software Engineering</option>
+    </select>
+  </label>
+
+  <label>Course type:
+    <select id="ddlCourseType">
+      <option>select</option>
+      <option>Courses with assessment and exam score</option>
+      <option>Courses without assessment score</option>
+    </select>
+  </label>
+
+  <br><br>
+  <button id="btnDisplay">Display</button>
+  <div id="setupError" style="color:red; margin-top:8px; display:none;">
+    Please select the exact Session, Semester, Level, and Course this roster belongs to - the ones chosen don't match any real course offering.
+  </div>
+</div>
+
+<div id="simulateFailToggle">
+  <label><input type="checkbox" id="chkSimulateFailures"> Simulate random submission failures (for testing retry logic)</label>
+  <label style="margin-left:20px;"><input type="checkbox" id="chkSlowSite"> Simulate a slow/laggy site (extra delay on every action)</label>
+</div>
+
+<div id="divstudentList" style="display:none;">
+  <table id="table-display">
+    <thead>
+      <tr><th>S/N</th><th>Name</th><th>Registration No</th><th>ATT</th><th>1ST MID</th><th>2ND MID</th><th>EXAM</th><th>Status</th></tr>
+    </thead>
+    <tbody id="tbBody"></tbody>
+  </table>
+</div>
+
+<script>
+// Only THIS combination is a "real" course offering in the mock - anything
+// else should correctly show no results, same as a real ERP would.
+const VALID_COMBO = {
+  session: "2025/2026 Session",
+  semester: "Second Semester",
+  level: "300 Level",
+  course: "GOU-CSC310",
+};
+
+let roster = [];
+
+function optionsFor(max) {
+  let html = '<option value="-1">select</option>';
+  for (let i = 0; i <= max; i++) html += `<option value="${i}">${i}</option>`;
+  html += '<option value="-2">Nil</option>';
+  return html;
+}
+
+function buildRows(studentList) {
+  const tbody = document.getElementById('tbBody');
+  tbody.innerHTML = '';
+  studentList.forEach(s => {
+    const tr = document.createElement('tr');
+    tr.id = 'row-' + s.reg_no;
+    tr.innerHTML = `
+      <td>${s.sn}</td>
+      <td>${s.name}</td>
+      <td class="reg-cell">${s.reg_no}</td>
+      <td><select name="ATT" class="longInput">${optionsFor(5)}</select></td>
+      <td><select name="ASS" class="longInput">${optionsFor(10)}</select></td>
+      <td><select name="MID" class="longInput">${optionsFor(15)}</select></td>
+      <td><select name="ddlExamScore" class="longInput">${optionsFor(70)}</select></td>
+      <td class="status-cell">Unsaved</td>
+    `;
+    tbody.appendChild(tr);
+  });
+}
+
+async function artificialDelay() {
+  const slow = document.getElementById('chkSlowSite').checked;
+  const base = slow ? 1200 : 200;
+  const jitter = slow ? 1500 : 300;
+  await new Promise(r => setTimeout(r, base + Math.random() * jitter));
+}
+
+document.getElementById('btnDisplay').addEventListener('click', async () => {
+  const chosen = {
+    session: document.getElementById('ddlSession').value,
+    semester: document.getElementById('ddlSemester').value,
+    level: document.getElementById('ddlLevel').value,
+    course: document.getElementById('ddlCourse').value,
+  };
+
+  await artificialDelay(); // simulate the real cascading-postback lag
+
+  const matches = Object.keys(VALID_COMBO).every(k => chosen[k] === VALID_COMBO[k]);
+  if (!matches) {
+    document.getElementById('setupError').style.display = 'block';
+    document.getElementById('divstudentList').style.display = 'none';
+    return;
+  }
+  document.getElementById('setupError').style.display = 'none';
+
+  if (roster.length === 0) {
+    const resp = await fetch('roster.json');
+    roster = await resp.json();
+  }
+
+  buildRows(roster);
+  document.getElementById('divstudentList').style.display = 'block';
+});
+
+window.submitRow = async function(reg) {
+  await artificialDelay();
+  return new Promise((resolve) => {
+    const row = document.getElementById('row-' + reg);
+    if (!row) { resolve({ ok: false }); return; }
+    const statusCell = row.querySelector('.status-cell');
+    const simulateFail = document.getElementById('chkSimulateFailures').checked;
+    const shouldFail = simulateFail && Math.random() < 0.35;
+
+    setTimeout(() => {
+      if (shouldFail) {
+        statusCell.textContent = 'Unsaved';
+        statusCell.className = 'status-cell status-unsaved';
+        resolve({ ok: false });
+      } else {
+        statusCell.textContent = 'Saved';
+        statusCell.className = 'status-cell status-saved';
+        resolve({ ok: true });
+      }
+    }, 150 + Math.random() * 250);
+  });
+};
+</script>
+</body>
+</html>
