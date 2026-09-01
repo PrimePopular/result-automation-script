@@ -1,10 +1,9 @@
 <!DOCTYPE html>
 <html>
-<head><title>Mock GOUNI Staff Access</title></head>
-<body id="pageBody" style="background-color: rgb(238,238,238); padding:40px;">
-  <div style="max-width:500px;margin:auto;background:#fff;padding:20px;border-radius:10px;">
-    <h4>Enter login information</h4>
-    <div id="loginError" style="color:red;display:none;">Invalid username or password</div>
+<head><title>Mock GOUNI Staff Access - Login</title></head>
+<body id="pageBody" style="background-color: rgb(238,238,238); padding:20px; margin:0;">
+  <div style="max-width:500px;">
+    <div id="loginError" style="color:red;display:none;margin-bottom:10px;">Invalid username or password</div>
     <div>
       Username.:
       <input name="txtUsername" type="text" id="txtUsername" class="longInput">
@@ -20,7 +19,15 @@ document.getElementById('btnLogin').addEventListener('click', function() {
   var p = document.getElementById('txtpassword').value;
   setTimeout(function() {
     if (u === 'Test.Lecturer' && p === 'testpass123') {
-      window.location.href = 'studentcoursemarks.html' + window.location.search;
+      // Break out of the iframe to the top-level dashboard, like the real
+      // site's postback would navigate the whole page after auth succeeds.
+      var qs = window.location.search;
+      var target = 'dashboard.html' + qs;
+      if (window.top !== window.self) {
+        window.top.location.href = target;
+      } else {
+        window.location.href = target;
+      }
     } else {
       document.getElementById('loginError').style.display = 'block';
     }
